@@ -21,9 +21,9 @@ modified: '2023-10-24T11:53:57.796Z'
   - [Introducción](#introducción)
   - [Instalación](#instalación)
     - [Seccion1](#seccion1)
-  - [Capitulo 2](#capitulo-2)
-    - [Subapartado 2.1](#subapartado-21)
-  - [Capitulo 3](#capitulo-3)
+- [Capitulo 2](#capitulo-2)
+  - [Subapartado 2.1](#subapartado-21)
+- [Capitulo 3](#capitulo-3)
     - [Seccion1](#seccion1-1)
 
 <div style="page-break-after: always;"></div>
