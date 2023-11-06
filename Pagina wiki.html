@@ -17,11 +17,9 @@
             text-decoration: none;
         }
          body>aside{
-            position: relative;
-            top: 100px;
-            float: left;
-            right: 200px;
-    
+            position:sticky;
+            width: 20%;
+            border: 1px solid black;
         }/*
         main>aside{
             float: right;
@@ -46,26 +44,30 @@
             border: 1px solid black;
             padding: 5px;
         }
-        body>header{
-            clear: both;
-        }
-        header>img, header> input, header>nav{
-            float: left;
-            border: 2px solid ;
-        }
-        header>nav>a{
-            padding: 10px;
-        }
-        header>img{
-            margin: 0px 100px 100px 0px;
-            
+        body>header figure, body>header nav{
+            width: 25%;
+            margin: 0px;
+       }
+       body>header input{
+        width: 33%;
+        height: 50px;
+       }
+       body>header{
+        display: flex;
+        justify-content: space-between;
+       }
+        main{
+            width: 60%;
+            float: right;
         }
     </style>
 </head>
 
 <body>
     <header>
+        <figure>
         <img src="wikipedia.png" alt="Logo wikipedia">
+        </figure>
         <input type="text" placeholder="Buscar en wikipedia">
         <nav>
             <a href="#">Crear una cuenta</a>
@@ -74,6 +76,7 @@
     </header>
     <aside>
         <p>Contenidos [ocultar]</p>
+        <hr>
         <h2>Inicio</h2>
         <ul>
             <li>Historia
