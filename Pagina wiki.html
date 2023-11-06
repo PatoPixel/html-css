@@ -16,13 +16,17 @@
             background-color: #ddddff;
             text-decoration: none;
         }
-        body>aside{
+         body>aside{
+            position: relative;
+            top: 100px;
             float: left;
-        }
+            right: 200px;
+    
+        }/*
         main>aside{
             float: right;
-            
-        }
+             
+        }*/
         aside>table{
             width: 35%;
         }
@@ -42,10 +46,20 @@
             border: 1px solid black;
             padding: 5px;
         }
+        body>header{
+            clear: both;
+        }
         header>img, header> input, header>nav{
             float: left;
+            border: 2px solid ;
         }
-
+        header>nav>a{
+            padding: 10px;
+        }
+        header>img{
+            margin: 0px 100px 100px 0px;
+            
+        }
     </style>
 </head>
 
