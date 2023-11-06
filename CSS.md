@@ -16,14 +16,14 @@ modified: '2023-10-27T10:50:06.909Z'
 
 
 # Tabla de contenidos
-- [PLANTILLA](#plantilla)
+- [CSS](#css)
 - [Tabla de contenidos](#tabla-de-contenidos)
   - [Introducción](#introducción)
   - [Instalación](#instalación)
     - [Seccion1](#seccion1)
-- [Capitulo 2](#capitulo-2)
-  - [Subapartado 2.1](#subapartado-21)
-- [Capitulo 3](#capitulo-3)
+  - [Capitulo 2](#capitulo-2)
+    - [Subapartado 2.1](#subapartado-21)
+  - [Capitulo 3](#capitulo-3)
     - [Seccion1](#seccion1-1)
 
 <div style="page-break-after: always;"></div>
