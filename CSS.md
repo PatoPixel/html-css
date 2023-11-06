@@ -16,14 +16,14 @@ modified: '2023-11-06T10:21:23.921Z'
 
 
 # Tabla de contenidos
-- [PLANTILLA](#plantilla)
+- [CSS](#css)
 - [Tabla de contenidos](#tabla-de-contenidos)
   - [Introducción](#introducción)
-  - [Instalación](#instalación)
+  - [Selectores](#selectores)
     - [Seccion1](#seccion1)
-- [Capitulo 2](#capitulo-2)
-  - [Subapartado 2.1](#subapartado-21)
-- [Capitulo 3](#capitulo-3)
+  - [Capitulo 2](#capitulo-2)
+    - [Subapartado 2.1](#subapartado-21)
+  - [Capitulo 3](#capitulo-3)
     - [Seccion1](#seccion1-1)
 
 <div style="page-break-after: always;"></div>
@@ -39,7 +39,7 @@ modified: '2023-11-06T10:21:23.921Z'
 
 ## Selectores
 [Tabla de contenidos](#tabla-de-contenidos)
-- 1. Selector descendente
+- Selector descendente
 ```css
 /* elige todos los td que tenga antes, no importa en que posicion, un table */
 table td {
@@ -48,7 +48,7 @@ table td {
 ```
 ![](@attachment/Clipboard_2023-11-06-11-10-41.png)
 
-- 2. Selector hijo
+- Selector hijo
  ```css
 /* elige todos los td que sean hijos directos de table */
 article>span {
@@ -58,7 +58,7 @@ article>span {
 ![](@attachment/Clipboard_2023-11-06-11-12-17.png)
 ![](@attachment/Clipboard_2023-11-06-11-12-40.png)
 
-- 3. Selector adyacente
+- Selector adyacente
 ```css
 /* Elige los span que tengan antes un P (no tiene que ser hijo) */
 p + span {
@@ -69,7 +69,7 @@ p + span {
 ![](@attachment/Clipboard_2023-11-06-11-19-35.png)
 
 
-- 4.
+- Selector de atributos
  ```css
  /* selecciona los td que tengas ese atributo */ 
  td[colspan="2"]{
