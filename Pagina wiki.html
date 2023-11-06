@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wiki</title>
+    <title>Document</title>
     <style>
         .celdas-finales{
             padding: 5px;
@@ -16,31 +16,25 @@
             background-color: #ddddff;
             text-decoration: none;
         }
-        .titulo-principal {
+        aside>table{
+            width: 35%;
+        }
+        tr:first-child>th{
             background-color: #FFDEAD;
             text-align: center;
             font-size: 30px;
         }
-
-        .titulos-en-tabla {
+        th[colspan="2"]{
             background-color: #FFDEAD;
-            text-align: center;
+            text-align: center, left, top; 
+            
         }
-
-        .tabla-principal {
-            border: black 1px solid;
-        }
-
-        th {
-            text-align: left;
-        }
-
-        td table tr {
-            width: 100%;
-        }
-
         figcaption {
             text-align: center;
+        }
+        table {
+            border: 1px solid black;
+            padding: 5px;
         }
     </style>
 </head>
@@ -54,8 +48,9 @@
             <a href="#">Acceder</a>
         </nav>
     </header>
-    <aside class="barra-izquerida">
+    <aside>
         <p>Contenidos [ocultar]</p>
+        <span>hola</span>
         <h2>Inicio</h2>
         <ul>
             <li>Historia
@@ -137,9 +132,9 @@
         </section>
         <h1>Islantilla</h1>
         <aside>
-            <table class="tabla-principal">
+            <table>
                 <tr>
-                    <th class="titulo-principal" colspan="2">Islantilla</th>
+                    <th colspan="2">Islantilla</th>
                 </tr>
                 <tr>
                     <td colspan="2">
@@ -167,7 +162,7 @@
                 </tr>
                 <tr>
                     <th>Longitud</th>
-                    <th>1'6 km aprox.</th>
+                    <td>1'6 km aprox.</td>
                 </tr>
                 <tr>
                     <th>Ancho</th>
@@ -253,8 +248,10 @@
             <h2>Historia</h2>
             <hr>
             <article>
+                <span>hola 1</span>
                 <h3>Antes de Islantilla</h3>
                 <p>
+                    <span>hola 2</span>
                     Los terrenos donde se asienta Islantilla eran tierras de labranza con unas pocas fincas en la zona
                     baja y
                     barrancos en su parte alta. Inundables por las lluvias y las mareas altas durante los temporales,
@@ -485,7 +482,7 @@
             <h2>Fiestas y eventos</h2>
             <hr>
             <p>
-                Dado que Islantilla es de reciente creación, carece de fiestas tradicionales, sin embargo en las
+                Dado que <span>hol hola</span>Islantilla es de reciente creación, carece de fiestas tradicionales, sin embargo en las
                 localidades vecinas hay una buena muestra del folclore andaluz y zonal.
 
                 El Festival de Cine de Islantilla, anteriormente conocido con el nombre de Festival Internacional de
@@ -556,6 +553,37 @@ El texto está disponible bajo la Licencia Creative Commons Atribución-Comparti
 Wikipedia® es una marca registrada de la Fundación Wikimedia, una organización sin ánimo de lucro.
             </p>
         </footer>
+
+        <section>
+            <h3>Tabla dentro de tabla</h3>
+            <table>
+                <tr>
+                  <td>
+                    <table>
+                      <tr>
+                        <td>bbb</td>
+                      </tr>
+                      <tr>
+                        <td>bbb</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td>aaa</td>
+                </tr>
+                <tr>
+                    <td>aaa</td>
+                    <td>aaa</td>
+                </tr>
+                <tr>
+                    <td>aaa</td>
+                    <td>aaa</td>
+                </tr>
+                <tr>
+                    <td>aaa</td>
+                    <td>aaa</td>
+                </tr>
+              </table> 
+        </section>
     </main>
 </body>
 
