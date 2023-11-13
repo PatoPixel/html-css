@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        th, .col {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tablas</h1>
+    
+    <table>
+        <caption>Cursos Soltel</caption>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Horas</th>
+                <th class="col">Plazas</th>
+                <th>Horario</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>XHTML</td>
+                <td colspan="2">20</td>
+                <td>09:00</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td rowspan="2">40</td>
+                <td class="col">15</td>
+                <td rowspan="2">16:00</td>
+            </tr>
+            <tr>
+                <td>UI</td>
+                <td class="col">10</td>
+            </tr>
+            <tr>
+                <td>Ajax</td>
+                <td>60</td>
+                <td class="col">20</td>
+                <td>08:30</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
