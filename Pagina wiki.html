@@ -20,13 +20,13 @@
             border: 5px solid blue;
             outline: 5px solid transparent;
         }
-         main {
+        main {
             display: flex;
             flex-flow: wrap;
             justify-content: space-between;
             width: 60%;
-            float: center;
-         }
+            float: center; }
+
         .celdas-finales {
             padding: 5px;
         }
@@ -44,18 +44,13 @@
             transition-duration: 2s;
             position:sticky;
             width: 20%;
-            border: 1px solid red;
+            border: 1px solid black;
         }
         body>aside:hover{
             transition-property: background-color, color;
             transition-duration: 2s;
             background-color: blue;
             color: red;
-        }
-        /*
-        main>aside{
-            float: right;
-             
         }
         aside>table {
             width: 35%;
@@ -113,9 +108,7 @@
             <a href="#">Acceder</a>
         </nav>
     </header>
-    
-    <main>
-        <aside>
+    <aside>
         <p>Contenidos [ocultar]</p>
         <hr>
         <h2>Inicio</h2>
@@ -158,6 +151,8 @@
             <li>Notas</li>
         </ul>
     </aside>
+    <main>
+        
         <nav>
             <a href="#">Articulo</a>
             <a href="#">Discursión</a>
