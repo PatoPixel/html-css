@@ -10,22 +10,60 @@
             display: flex;
             justify-content: space-between;
         }
+
         body>header figure,
         body>header nav {
             width: 25%;
             margin: 0px;
         }
-        body>header input:active{
+
+        body>header input {
+            width: 450px;
+            height: 40px;
+        }
+
+        body>header figure,
+        body>header nav {
+            width: 25%;
+            margin: 0px;
+        }
+
+        body>header input:active {
             background-color: red;
             border: 5px solid blue;
             outline: 5px solid transparent;
         }
+
+        body>aside {
+            float: left;
+            transition-property: background-color, color;
+            transition-duration: 2s;
+            /* position: sticky; */
+            width: 20%;
+            border: 1px solid black;
+        }
+
+        body>aside:hover {
+            transition-property: background-color, color;
+            transition-duration: 2s;
+            background-color: blue;
+            color: red;
+        }
+
         main {
+
             display: flex;
             flex-flow: wrap;
             justify-content: space-between;
-            width: 60%;
-            float: center; }
+            width: 70%;
+        }
+        main {
+            border: 1px black solid;
+            float: left;
+            margin-right: 50px;
+            margin-left: 5px;
+        }
+
 
         .celdas-finales {
             padding: 5px;
@@ -39,20 +77,8 @@
             background-color: #ddddff;
             text-decoration: none;
         }
-         body>aside{
-            transition-property: background-color, color;
-            transition-duration: 2s;
-            position:sticky;
-            width: 20%;
-            border: 1px solid black;
-        }
-        body>aside:hover{
-            transition-property: background-color, color;
-            transition-duration: 2s;
-            background-color: blue;
-            color: red;
-        }
-                aside>table {
+
+        aside>table {
             width: 35%;
         }
 
@@ -75,23 +101,11 @@
             border: 1px solid black;
             padding: 5px;
         }
-        body>header figure, body>header nav{
-            width: 25%;
-            margin: 0px;
-       }
-       body>header input{
-        width: 33%;
-        height: 50px;
-       }
-       body>header{
-        display: flex;
-        justify-content: space-between;
-       }
-        main{
-            width: 60%;
-            float: right;
+
+        
+        body aside ul>li+li>a {
+            text-decoration: none
         }
-        body aside ul > li + li > a { text-decoration:none}
     </style>
 </head>
 
@@ -108,19 +122,19 @@
             <a href="#">Acceder</a>
         </nav>
     </header>
-            <aside>
+    <aside>
         <p>Contenidos [ocultar]</p>
         <hr>
         <h2>Inicio</h2>
         <ul>
-            <li>Historia 
+            <li>Historia
                 <ul>
                     <li>Antes de Islantilla</li>
                     <li>Fundación de Islantilla</li>
                 </ul>
             </li>
             <li>
-                Comunicaciones y entorno<a href="#">fff</a>
+                Comunicaciones y entorno
                 <ul>
                     <li>Aeropuertos</li>
                     <li>Ferrocarril</li>
@@ -151,8 +165,8 @@
             <li>Notas</li>
         </ul>
     </aside>
-<main>
-        
+    <main>
+
         <nav>
             <a href="#">Articulo</a>
             <a href="#">Discursión</a>
@@ -297,6 +311,7 @@
                 </tr>
             </table>
         </aside>
+        <article>
         <p>Islantilla es una playa y mancomunidad conformada por los municipios costeros de Isla Cristina y Lepe,
             situada en la provincia de Huelva, Andalucía, en la conocida como Costa de la Luz, al suroeste de España. La
             mancomunidad nació en 1991 con el objetivo de ser uno de los referentes turísticos de la provincia de
@@ -305,6 +320,7 @@
             Isla Cristina y 733 en Lepe. La trama urbana continua de más de 5 kilómetros de largo que va desde Urbasur
             hasta La Antilla suma una población estable en invierno de 2.799 habitantes (INE 2015), aunque en verano
             puede alcanzar los 100.000.</p>
+        </article>
         <section>
             <h2>Historia</h2>
             <hr>
