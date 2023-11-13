@@ -6,13 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .celdas-finales{
+        body>header {
+            display: flex;
+            justify-content: space-between;
+        }
+        body>header figure,
+        body>header nav {
+            width: 25%;
+            margin: 0px;
+        }
+        body>header input:active{
+            background-color: red;
+            border: 5px solid blue;
+            outline: 5px solid transparent;
+        }
+         main {
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-between;
+            width: 60%;
+            float: center;
+         }
+        .celdas-finales {
             padding: 5px;
         }
-        .información-final{
+
+        .información-final {
             border: 1px black solid;
         }
-        .control-de-autoridades{
+
+        .control-de-autoridades {
             background-color: #ddddff;
             text-decoration: none;
         }
@@ -33,22 +56,26 @@
         main>aside{
             float: right;
              
-        }*/
-        aside>table{
+        }
+        aside>table {
             width: 35%;
         }
-        tr:first-child>th{
+
+        tr:first-child>th {
             background-color: #FFDEAD;
             text-align: center;
             font-size: 30px;
         }
-        th[colspan="2"]{
+
+        th[colspan="2"] {
             background-color: #FFDEAD;
-            text-align: center, left, top; 
+            text-align: center, left, top;
         }
+
         figcaption {
             text-align: center;
         }
+
         table {
             border: 1px solid black;
             padding: 5px;
@@ -76,15 +103,19 @@
 <body>
     <header>
         <figure>
-        <img src="wikipedia.png" alt="Logo wikipedia">
+            <img src="wikipedia.png" alt="Logo wikipedia">
         </figure>
-        <input type="text" placeholder="Buscar en wikipedia">
+        <form action="">
+            <input type="text" placeholder="Buscar en wikipedia">
+        </form>
         <nav>
             <a href="#">Crear una cuenta</a>
             <a href="#">Acceder</a>
         </nav>
     </header>
-    <aside>
+    
+    <main>
+        <aside>
         <p>Contenidos [ocultar]</p>
         <hr>
         <h2>Inicio</h2>
@@ -127,7 +158,6 @@
             <li>Notas</li>
         </ul>
     </aside>
-    <main>
         <nav>
             <a href="#">Articulo</a>
             <a href="#">Discursión</a>
@@ -518,7 +548,8 @@
             <h2>Fiestas y eventos</h2>
             <hr>
             <p>
-                Dado que <span>hol hola</span>Islantilla es de reciente creación, carece de fiestas tradicionales, sin embargo en las
+                Dado que <span>hol hola</span>Islantilla es de reciente creación, carece de fiestas tradicionales, sin
+                embargo en las
                 localidades vecinas hay una buena muestra del folclore andaluz y zonal.
 
                 El Festival de Cine de Islantilla, anteriormente conocido con el nombre de Festival Internacional de
@@ -573,7 +604,8 @@
         </section>
         <table class="información-final">
             <tr>
-                <td class="control-de-autoridades celdas-finales"><a href="#" class="control-de-autoridades">Control de autoridades</a></td>
+                <td class="control-de-autoridades celdas-finales"><a href="#" class="control-de-autoridades">Control de
+                        autoridades</a></td>
                 <td class="celdas-finales">Proyectos Wikimedia</td>
                 <td class="celdas-finales">Datos: Q6083800</td>
                 <td class="celdas-finales">Multimedia: Islantilla / Q6083800</td>
@@ -582,11 +614,13 @@
         <hr>
         <footer>
             <p>
-                Esta página se editó por última vez el 22 ago 2023 a las 16:09. 
+                Esta página se editó por última vez el 22 ago 2023 a las 16:09.
             </p>
             <p>
-El texto está disponible bajo la Licencia Creative Commons Atribución-CompartirIgual 4.0; pueden aplicarse cláusulas adicionales. Al usar este sitio aceptas nuestros términos de uso y nuestra política de privacidad.
-Wikipedia® es una marca registrada de la Fundación Wikimedia, una organización sin ánimo de lucro.
+                El texto está disponible bajo la Licencia Creative Commons Atribución-CompartirIgual 4.0; pueden
+                aplicarse cláusulas adicionales. Al usar este sitio aceptas nuestros términos de uso y nuestra política
+                de privacidad.
+                Wikipedia® es una marca registrada de la Fundación Wikimedia, una organización sin ánimo de lucro.
             </p>
         </footer>
 
@@ -594,20 +628,16 @@ Wikipedia® es una marca registrada de la Fundación Wikimedia, una organizació
             <h3>Tabla dentro de tabla</h3>
             <table>
                 <tr>
-                  <td>
-                    <table>
-                      <tr>
-                        <td>bbb</td>
-                      </tr>
-                      <tr>
-                        <td>bbb</td>
-                      </tr>
-                    </table>
-                  </td>
-                  <td>aaa</td>
-                </tr>
-                <tr>
-                    <td>aaa</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>bbb</td>
+                            </tr>
+                            <tr>
+                                <td>bbb</td>
+                            </tr>
+                        </table>
+                    </td>
                     <td>aaa</td>
                 </tr>
                 <tr>
@@ -618,7 +648,11 @@ Wikipedia® es una marca registrada de la Fundación Wikimedia, una organizació
                     <td>aaa</td>
                     <td>aaa</td>
                 </tr>
-              </table> 
+                <tr>
+                    <td>aaa</td>
+                    <td>aaa</td>
+                </tr>
+            </table>
         </section>
     </main>
 </body>
