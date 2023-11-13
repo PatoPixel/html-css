@@ -17,10 +17,19 @@
             text-decoration: none;
         }
          body>aside{
+            transition-property: background-color, color;
+            transition-duration: 2s;
             position:sticky;
             width: 20%;
             border: 1px solid black;
-        }/*
+        }
+        body>aside:hover{
+            transition-property: background-color, color;
+            transition-duration: 2s;
+            background-color: blue;
+            color: red;
+        }
+        /*
         main>aside{
             float: right;
              
@@ -60,6 +69,7 @@
             width: 60%;
             float: right;
         }
+        body aside ul > li + li > a { text-decoration:none}
     </style>
 </head>
 
@@ -79,14 +89,14 @@
         <hr>
         <h2>Inicio</h2>
         <ul>
-            <li>Historia
+            <li>Historia 
                 <ul>
                     <li>Antes de Islantilla</li>
                     <li>Fundación de Islantilla</li>
                 </ul>
             </li>
             <li>
-                Comunicaciones y entorno
+                Comunicaciones y entorno<a href="#">fff</a>
                 <ul>
                     <li>Aeropuertos</li>
                     <li>Ferrocarril</li>
