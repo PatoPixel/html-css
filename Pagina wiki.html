@@ -7,6 +7,11 @@
     <title>Document</title>
     <style>
         /*holaa*/
+        html{
+            width: 80%;
+            margin-left: 200px;
+            margin-right: 50px;
+        }
         body>header {
             display: flex;
             justify-content: space-between;
@@ -39,10 +44,11 @@
             float: left;
             transition-property: background-color, color;
             transition-duration: 2s;
-            /* position: sticky; */
             width: 20%;
             border: 1px solid black;
             color: blue;
+            position:sticky;
+            top: 0px;
         }
 
         body>aside:hover {
@@ -53,20 +59,17 @@
         }
 
         main {
-
-            display: flex;
-            flex-flow: wrap;
-            justify-content: space-between;
-            width: 70%;
+            width: 75%;
+            border: 1px black solid;   
+            margin-left: 20%;
         }
-        main {
-            border: 1px black solid;
-            float: left;
-            margin-right: 50px;
-            margin-left: 5px;
+        main>nav:nth-child(2){
+            float: right;
         }
-
-
+        main>aside{
+            margin-left: 100px;
+            float: right;
+        }
         .celdas-finales {
             padding: 5px;
         }
@@ -125,6 +128,7 @@
         </nav>
     </header>
     <aside>
+        
         <p>Contenidos [ocultar]</p>
         <hr>
         <h2>Inicio</h2>
@@ -166,6 +170,7 @@
             <li>Enlaces externos</li>
             <li>Notas</li>
         </ul>
+    
     </aside>
     <main>
 
@@ -327,7 +332,6 @@
             <h2>Historia</h2>
             <hr>
             <article>
-                <span>hola 1</span>
                 <h3>Antes de Islantilla</h3>
                 <p>
                     <span>hola 2</span>
