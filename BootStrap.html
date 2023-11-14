@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,40 +9,68 @@
     <link rel="stylesheet" href="BootsTrap/docs.css">
     <script src="BootsTrap/BootStrap.bundle.min.js"> </script>
     <style>
-        main{
+        main {
             background-color: lightblue;
         }
-        section{
+
+        section {
             border: 1px solid black;
         }
-
     </style>
 </head>
-<body>
-    <main class="container text-center">
-<section class="col">
-    <h2>Seccion Izquierda</h2>
-</section>
-<section class="col-9">
-    <h2>Seccion Central</h2>
-</section>
-<section class="col">
-    <h2>Seccion Derecha</h2>
-</section >
 
+<body class=" p-4 bd-example bd-example-row bd-example-row-flex-cols">
+    <article class="container text-center row justify-content-center">
+        <section class="col align-self-center">
+            <h2>Seccion Izquierda</h2>
+        </section>
+        <section class="col align-self-end">
+            <h2>Seccion Central</h2>
+        </section>
+        <section class="col align-self-end">
+            <h2>Seccion Central2</h2>
+        </section>
+        <section class="col align-self-start">
+            <h2>Seccion Derecha</h2>
+        </section>
+    </article>
+    <article class="container text-center row justify-content-end">
+        <section class="col-4">
+            <h2>Seccion Izquierda</h2>
+        </section>
+        <section class="col-4 align-self-start">
+            <h2>Seccion Central2</h2>
+        </section>
+        <div class="w-100"></div>
+        <section class="col-3">
+            <h2>Seccion Central</h2>
+        </section>
+    </article>
+    <article class="container text-center row justify-content-end">
+        <section class="col-4">
+            <h2>Seccion Izquierda</h2>
+        </section>
+        <section class="col-4 align-self-start">
+            <h2>Seccion Central2</h2>
+        </section>
+        <div class="w-100"></div>
+        <section class="col-3">
+            <h2>Seccion Central</h2>
+        </section>
+    </article>
+    <main class="container text-center">
+        <article class="row justify-content-end">
+            <section class="col-4">
+                <h2>Seccion Izquierda</h2>
+            </section>
+            <section class="col-4 align-self-start">
+                <h2>Seccion Central2</h2>
+            </section>
+            <section class="col-3">
+                <h2>Seccion Central</h2>
+            </section>
+        </article>
     </main>
-    <div class="container text-center">
-        <div class="row align-items-center">
-          <div class="col">
-            One of three columns
-          </div>
-          <div class="col">
-            One of three columns
-          </div>
-          <div class="col">
-            One of three columns
-          </div>
-        </div>
-      </div>
 </body>
+
 </html>
