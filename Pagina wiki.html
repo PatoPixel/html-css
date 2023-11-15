@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        p{
+        p {
             line-height: 25px;
         }
-        html{
+
+        html {
             width: 80%;
             margin-left: 200px;
             margin-right: 50px;
         }
+
         body>header {
             display: flex;
             justify-content: space-between;
@@ -49,7 +51,7 @@
             width: 15%;
             /* border: 1px solid black; */
             color: blue;
-            position:sticky;
+            position: sticky;
             top: 0px;
         }
 
@@ -65,14 +67,27 @@
             /* border: 1px black solid;    */
             margin-left: 20%;
         }
-        main>nav:nth-child(2){
+
+        main>nav {
+            float: left;
+        }
+
+        main>nav+nav {
             float: right;
         }
-        main>aside{
+        main>nav a, main>nav select{
+            padding: 5px;
+        }
+
+        main>aside {
             width: 370px;
             float: right;
             margin-left: 5px;
         }
+        .herramienta{
+            float: right;
+        }
+
         .celdas-finales {
             padding: 5px;
         }
@@ -110,7 +125,7 @@
             padding: 5px;
         }
 
-        
+
         body aside ul>li+li>a {
             text-decoration: none
         }
@@ -131,7 +146,7 @@
         </nav>
     </header>
     <aside>
-        
+
         <p>Contenidos [ocultar]</p>
         <hr>
         <h2>Inicio</h2>
@@ -173,10 +188,12 @@
             <li>Enlaces externos</li>
             <li>Notas</li>
         </ul>
-    
+
     </aside>
     <main>
         <h1>Islantilla</h1>
+        <hr>
+        <br>
         <nav>
             <a href="#">Articulo</a>
             <a href="#">Discursión</a>
@@ -185,16 +202,8 @@
             <a href="#">Leer</a>
             <a href="#">Editar</a>
             <a href="#">Ver historial</a>
-        </nav>
-        <!--
-            He usado el select como método de menú, no serviría como
-            un menú real pero no se como hacer un menú y esto es lo
-            único que se me ha parecido
-        -->
-        <section>
-            <h3>Herramientas</h3>
-            <select name="Herramientas" id="herramientas">
-                <option value="#" disabled="disabled" selected="selected"> General</option>
+            <select name="Herramientas" id="herramientas" class="herramienta">
+                <option value="#" disabled="disabled" selected="selected"> Herramientas</option>
                 <option value="#">Lo que enlaza aqui</option>
                 <option value="#">Cambios en enlazadas</option>
                 <option value="#">Subir archivo</option>
@@ -210,11 +219,19 @@
                 <option value="#">Descargar como PDF</option>
                 <option value="#">Versión para imprimir</option>
                 <option value="#" disabled="disabled">En otros proyectos</option>
-                <option value="#">Wikimedia Commons</option>
-
-
+                <option value="#">Wikimedia Commons</option>    
             </select>
-        </section>
+        </nav>
+        
+        <!--
+            He usado el select como método de menú, no serviría como
+            un menú real pero no se como hacer un menú y esto es lo
+            único que se me ha parecido
+        -->
+<br>
+<br>
+<hr>
+<br><br>
         <aside>
             <table>
                 <tr>
@@ -222,7 +239,7 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <figure>
+    <figure>
                             <img src="Islantilla.jpg" alt="Islantilla">
                             <figcaption>
                                 Islantilla
