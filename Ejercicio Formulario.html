@@ -29,16 +29,22 @@
 <body>
     <main class="m-5">
         <form action="#" method="post" class="container g-3 mt-3">
+            <!--
+            Primer fieldset
+        -->
             <fieldset class="p-4 mb-3">
                 <h2 class="mb-3">DATOS PARTICIPANTES</h2>
+                <!--Uso artcle para cada linea del formulario-->
+                <!--Primera fila-->
                 <article class="row">
                     <h3 class="hidden">Primera fila</h3>
                     <section class="col-3 mb-3">
                         <h3 class="hidden">Nombre</h3>
                         <label for="NIF" class="form-label">NIF</label>
                         <article class="input-group">
-                            <input type="text" name="NIF" id="NIF" class="form-control">
-                            <button class="btn btn-outline-primary" type="button" id="button-addon1">Buscar</button>
+                            <h4 class="hidden">Boton De NIF</h4>
+                            <input type="text" name="NIF" id="NIF" class="form-control ">
+                            <button class="btn btn-outline-primary" type="button" id="buscar">Buscar</button>
                         </article>
                     </section>
                     <section class="col-2 mb-3">
@@ -47,7 +53,7 @@
                         <input type="text" name="NSS" id="NSS" class="form-control">
                     </section>
                 </article>
-
+                <!--Segunda fila-->
                 <article class="row">
                     <h3 class="hidden">Segunda fila</h3>
                     <section class="col-3 mb-3">
@@ -66,149 +72,283 @@
                         <input type="text" name="Segundo-Apellido" id="Segundo-Apellido" class="form-control">
                     </section>
                 </article>
-
+                <!--Tercera fila-->
                 <article>
                     <h3 class="hidden">tercera fila</h3>
                     <section class="col-8 mb-3">
                         <h3 class="hidden">Situacion laboral</h3>
                         <label for="Situacion-laboral" class="form-label">Situacion laboral</label>
-                        <select class="form-select" disabled>
+                        <select class="form-select" id="Situacion-laboral" disabled>
                             <option value="1">Desempleado</option>
                             <option value="2">Cuenta ajena</option>
                             <option value="3">Autónomo</option>
                         </select>
                     </section>
                 </article>
-
+                <!--Cuarta fila-->
                 <article>
                     <h3 class="hidden">Cuarta fila</h3>
                     <section class="col-8 mb-3">
                         <h3 class="hidden">Situacion laboral anterior</h3>
                         <label for="Situacion-laboral-anterior" class="form-label">Situacion laboral anterior</label>
-                        <select class="form-select">
-                            <option value="1">Desempleado</option>
-                            <option value="2">Cuenta ajena</option>
-                            <option value="3">Autónomo</option>
+                        <select class="form-select" id="Situacion-laboral-anterior">
+                            <option value="Desempleado">Desempleado</option>
+                            <option value="Cuenta ajena">Cuenta ajena</option>
+                            <option value="Autónomo">Autónomo</option>
                         </select>
                     </section>
                 </article>
-
+                <!--Quinta fila-->
                 <article>
                     <h3 class="hidden">Quinta fila</h3>
-                    <label for="Reserva" class="form-label col-1">Reserva</label>
-                    <section class="mb-3 form-check form-check-inline">
+                    <label class="form-label col-1">Reserva</label>
+                    <div class="mb-3 form-check form-check-inline" id="Reserva">
                         <input class="form-check-input" type="radio" name="Reserva" id="SI">
                         <label class="form-check-label" for="SI">Si</label>
-                    </section>
-                    <section class="mb-3 form-check form-check-inline">
+                    </div>
+                    <div class="mb-3 form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="Reserva" id="No">
                         <label class="form-check-label" for="No">No</label>
+                    </div>
+                </article>
+            </fieldset>
+            <!--
+    Segundo fieldset
+-->
+            <fieldset class="p-4 mb-3">
+                <h2 class="mb-3">CARACTERISTICAS</h2>
+                <!--Primera fila-->
+                <article>
+                    <h3 class="hidden">Primera fila</h3>
+                    <label class="form-label col-2">Dese????? selección SEPE</label>
+                    <div class="mb-3 form-check form-check-inline" id="Seleccion-SEPE">
+                        <input class="form-check-input" type="radio" name="Seleccion-SEPE" id="Si2">
+                        <label class="form-check-label" for="Si2">Si</label>
+                    </div>
+                    <div class="mb-3 form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Seleccion-SEPE" id="No2">
+                        <label class="form-check-label" for="No2">No</label>
+                    </div>
+                </article>
+                <!--Segunda fila-->
+                <article>
+                    <h3 class="hidden">Segunda fila</h3>
+                    <label class="form-label col-1">Género</label>
+                    <div class="mb-3 form-check form-check-inline" id="Género">
+                        <input class="form-check-input" type="radio" name="genero" id="Masculino">
+                        <label class="form-check-label" for="Masculino">Masculino</label>
+                    </div>
+                    <div class="mb-3 form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="genero" id="Femenino">
+                        <label class="form-check-label" for="Femenino">Femenino</label>
+                    </div>
+                </article>
+                <!--Tercera fila-->
+                <article class="row">
+                    <h3 class="hidden">Tercara fila</h3>
+                    <section class="col-2 mb-3">
+                        <h3 class="hidden">Nombre</h3>
+                        <label for="Fecha-de-nacimiento" class="form-label">Fecha de nacimiento</label>
+                        <div class="input-group">
+                            <input type="date" name="Fecha-de-nacimiento" id="Fecha-de-nacimiento" class="form-control">
+                            <button class="btn btn-warning" type="button" id="Fecha-de-nacimiento-calendario">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-calendar" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </section>
+                </article>
+                <!--Cuarta fila-->
+                <article class="row">
+                    <h3 class="hidden">Cuarta fila</h3>
+                    <section class="col-2 mb-3">
+                        <h3 class="hidden">Télefono</h3>
+                        <label for="telefono" class="form-label">Télefono</label>
+                        <input type="tel" name="telefono" id="telefono" class="form-control">
+                    </section>
+                    <section class="col-6 mb-3">
+                        <h3 class="hidden">Email</h3>
+                        <label for="Email" class="form-label">Email</label>
+                        <input type="email" name="Email" id="Email" class="form-control">
+                    </section>
+                </article>
+                <!--Quinta fila-->
+                <article>
+                    <h3 class="hidden">Quinta fila</h3>
+                    <label class="form-label col-1">Discapacidad</label>
+                    <div class="mb-3 form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="discapacidad" id="Si3">
+                        <label class="form-check-label" for="Si3">Sí</label>
+                    </div>
+                    <div class="mb-3 form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="discapacidad" id="No3">
+                        <label class="form-check-label" for="No3">No</label>
+                    </div>
+                </article>
+                <!--Sexta fila-->
+                <article>
+                    <h3 class="hidden">Sexta fila</h3>
+                    <section class="col-9 mb-3">
+                        <h3 class="hidden">Categoria profesional</h3>
+                        <label for="Categoria-profesional" class="form-label">Categoria profesional</label>
+                        <select class="form-select" id="Categoria-profesional">
+                            <option value="#" disabled selected hidden>-- Elija Opción</option>
+                            <option value="Ingeniero">Ingeniero</option>
+                            <option value="DAM">DAM</option>
+                            <option value="DAW">DAW</option>
+                        </select>
+                    </section>
+                </article>
+                <!--Septima fila-->
+                <article class="row">
+                    <h3 class="hidden">Septima fila</h3>
+                    <section class="col-3 mb-3">
+                        <h3 class="hidden">???????</h3>
+                        <label for="Algo1" class="form-label">????????</label>
+                        <input type="text" name="Algo1" id="Algo1" class="form-control">
+                    </section>
+                    <section class="col-2 mb-3">
+                        <h3 class="hidden">CP</h3>
+                        <label for="CP" class="form-label">Cp ?????????</label>
+                        <input type="text" name="CP" id="CP" class="form-control">
+                    </section>
+                    <section class="col-1 mb-3">
+                        <h3 class="hidden">Boton</h3>
+                        <br>
+                        <button type="button" class="btn btn-primary mt-2" id="boton">Aceptar</button>
+                    </section>
+                    <section class="col-3 mb-3">
+                        <h3 class="hidden">???????</h3>
+                        <label for="algo2" class="form-label">????????????</label>
+                        <select class="form-select" id="algo2" disabled>
+                            <option value="#" selected>&nbsp;</option>
+                            <option value="nada">opcion1</option>
+                        </select>
+                    </section>
+                    <section class="col-3 mb-3">
+                        <h3 class="hidden">???????</h3>
+                        <label for="Algo3" class="form-label">???????</label>
+                        <input type="text" name="Algo3" id="Algo3" class="form-control" disabled>
+                    </section>
+                </article>
+                <!--Octava fila-->
+                <article>
+                    <h3 class="hidden">octava fila</h3>
+                    <section class="col-9 mb-3">
+                        <h3 class="hidden">Nivel de estudios</h3>
+                        <label for="Nivel-de-estudios" class="form-label">Nivel de estudios</label>
+                        <select class="form-select" id="Nivel-de-estudios">
+                            <option value="#" disabled selected hidden>-- Elija Opción</option>
+                            <option value="Ingeniero">Ingeniero</option>
+                            <option value="DAM">DAM</option>
+                            <option value="DAW">DAW</option>
+                        </select>
+                    </section>
+                </article>
+                <!--Novena fila-->
+                <article>
+                    <h3 class="hidden">Novena Fila</h3>
+                    <section class="col-9 mb-3">
+                        <h3 class="hidden">???????</h3>
+                        <label for="Algo4" class="form-label">????????</label>
+                        <input type="text" name="Algo4" id="Algo4" class="form-control" disabled>
+                    </section>
+                </article>
+                <!--Decima fila-->
+                <article class="row">
+                    <h3 class="hidden">Decima fila</h3>
+                    <section class="col-4 mb-3">
+                        <h3 class="hidden">Finalización o abandono</h3>
+                        <label for="Finalización-o-abandono" class="form-label">Finalización o abandono</label>
+                        <select class="form-select" id="Finalización-o-abandono">
+                            <option value="#" disabled selected hidden>-- Elija Opción</option>
+                            <option value="Ingeniero">Ingeniero</option>
+                            <option value="DAM">DAM</option>
+                            <option value="DAW">DAW</option>
+                        </select>
+                    </section>
+                    <section class="col-3 mb-3">
+                        <h3 class="hidden">Causa de abandono</h3>
+                        <label for="Causa-de-abandono" class="form-label">Causa de abandono</label>
+                        <select class="form-select" id="Causa-de-abandono" disabled>
+                            <option value="#" disabled selected hidden>-- Elija Opción</option>
+                            <option value="Ingeniero">Ingeniero</option>
+                            <option value="DAM">DAM</option>
+                            <option value="DAW">DAW</option>
+                        </select>
+                    </section>
+                    <section class="col-2 mb-3">
+                        <h3 class="hidden">Fecha de abandono</h3>
+                        <label for="Fecha-de-abandono" class="form-label">Fecha de abandono</label>
+                        <div class="input-group">
+                            <input type="date" name="Fecha-de-abandono" id="Fecha-de-abandono" class="form-control"
+                                disabled>
+                            <button class="btn btn-warning" type="button" id="Fecha-de-abandono-calendario">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-calendar" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </section>
+                    <section class="col-3 mb-3">
+                        <h3 class="hidden">Evalucion aprendizaje</h3>
+                        <label for="Evalucion-aprendizaje" class="form-label">Evalucion aprendizaje</label>
+                        <select class="form-select" id="Evalucion-aprendizaje" disabled>
+                            <option value="#" disabled selected hidden>-- Elija Opción</option>
+                            <option value="Ingeniero">Ingeniero</option>
+                            <option value="DAM">DAM</option>
+                            <option value="DAW">DAW</option>
+                        </select>
                     </section>
                 </article>
             </fieldset>
-
-            <fieldset class="p-4 mn-3">
-                <h2 class="mb-3">CARACTERISTICAS</h2>
+            <!--
+                Tecer Fieldset
+            -->
+            <fieldset class="p-4 mb-3">
+                <!--Primera Fila-->
                 <article>
                     <h3 class="hidden">Primera fila</h3>
-                    <label for="Seleccion-SEPE" class="form-label col-2">Dese????? selección SEPE</label>
-                    <section class="mb-3 form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="Seleccion-SEPE" id="Si">
-                        <label class="form-check-label" for="Si">Si</label>
-                    </section>
-                    <section class="mb-3 form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="Seleccion-SEPE" id="No">
-                        <label class="form-check-label" for="No">No</label>
-                    </section>
+                    <label class="form-label col-3">¿Es desempleado de larga duración?</label>
+                    <div class="mb-3 form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Larga-duracion" id="Si4">
+                        <label class="form-check-label" for="Si4">Sí</label>
+                    </div>
+                    <div class="mb-3 form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Larga-duracion" id="No4">
+                        <label class="form-check-label" for="No4">No</label>
+                    </div>
                 </article>
-
+                <!--Segunda Fila-->
                 <article>
                     <h3 class="hidden">Segunda fila</h3>
-                    <label for="Género" class="form-label col-1">Género</label>
-                    <section class="mb-3 form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="genero" id="Masculino">
-                        <label class="form-check-label" for="Masculino">Masculino</label>
-                    </section>
-                    <section class="mb-3 form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="genero" id="Femenino">
-                        <label class="form-check-label" for="Femenino">Femenino</label>
-                    </section>
+                    <label class="form-label col-3">¿Quiere inscribirse en el fichero del Sistema Nacional de Garantía Juvenil?</label>
+                    <div class="mb-3 form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="SNGJ" id="Si5">
+                        <label class="form-check-label" for="Si5">Sí</label>
+                    </div>
+                    <div class="mb-3 form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="SNGJ" id="No5">
+                        <label class="form-check-label" for="No5">No</label>
+                    </div>
                 </article>
-
-                <article class="row">
-                    <h3 class="hidden">Primera fila</h3>
-                    <section class="col-3 mb-3">
-                        <h3 class="hidden">Nombre</h3>
-                        <label for="NIF" class="form-label">NIF</label>
-                        <article class="input-group">
-                            <input type="text" name="NIF" id="NIF" class="form-control">
-                            <button class="btn btn-outline-primary" type="button" id="button-addon1">Buscar</button>
-                        </article>
-                    </section>
-                    <section class="col-2 mb-3">
-                        <h3 class="hidden">Numero Seguridad Social</h3>
-                        <label for="NSS" class="form-label">NSS</label>
-                        <input type="text" name="NSS" id="NSS" class="form-control">
-                    </section>
-                </article>
-
-                <article class="row">
-                    <h3 class="hidden">Segunda fila</h3>
-                    <section class="col-3 mb-3">
-                        <h3 class="hidden">Nombre</h3>
-                        <label for="Nombre" class="form-label">Nombre</label>
-                        <input type="text" name="Nombre" id="Nombre" class="form-control">
-                    </section>
-                    <section class="col-4 mb-3">
-                        <h3 class="hidden">Primer Apellido</h3>
-                        <label for="Primer-Apellido" class="form-label">Primer Apellido</label>
-                        <input type="text" name="Primer-Apellido" id="Primer-Apellido" class="form-control">
-                    </section>
-                    <section class="col-4 mb-3">
-                        <h3 class="hidden">Segundo Apellido</h3>
-                        <label for="Segundo-Apellido" class="form-label">Segundo Apellido</label>
-                        <input type="text" name="Segundo-Apellido" id="Segundo-Apellido" class="form-control">
-                    </section>
-                </article>
-
+                <!--Tercera Fila-->
                 <article>
-                    <h3 class="hidden">tercera fila</h3>
-                    <section class="col-8 mb-3">
-                        <h3 class="hidden">Situacion laboral</h3>
-                        <label for="Situacion-laboral" class="form-label">Situacion laboral</label>
-                        <select class="form-select" disabled>
-                            <option value="1">Desempleado</option>
-                            <option value="2">Cuenta ajena</option>
-                            <option value="3">Autónomo</option>
-                        </select>
-                    </section>
-                </article>
-
-                <article>
-                    <h3 class="hidden">Cuarta fila</h3>
-                    <section class="col-8 mb-3">
-                        <h3 class="hidden">Situacion laboral anterior</h3>
-                        <label for="Situacion-laboral-anterior" class="form-label">Situacion laboral anterior</label>
-                        <select class="form-select">
-                            <option value="1">Desempleado</option>
-                            <option value="2">Cuenta ajena</option>
-                            <option value="3">Autónomo</option>
-                        </select>
-                    </section>
-                </article>
-
-                <article>
-                    <h3 class="hidden">Quinta fila</h3>
-                    <label for="Reserva" class="form-label col-1">Reserva</label>
-                    <section class="mb-3 form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                            value="option1">
-                        <label class="form-check-label" for="inlineRadio1">Si</label>
-                    </section>
-                    <section class="mb-3 form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="NO" id="No">
-                        <label class="form-check-label" for="No">No</label>
-                    </section>
+                    <h3 class="hidden">Tercera fila</h3>
+                    <label class="form-label col-3">¿Otros?</label>
+                    <div class="mb-3 form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="¿Otros?" id="Si6">
+                        <label class="form-check-label" for="Si6">Sí</label>
+                    </div>
+                    <div class="mb-3 form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="¿Otros?" id="No6">
+                        <label class="form-check-label" for="No6">No</label>
+                    </div>
                 </article>
             </fieldset>
         </form>
