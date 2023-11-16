@@ -28,27 +28,163 @@
 
 <body>
     <main class="m-5">
-        <form action="#" method="post" class="container row g-3 mt-3">
-            <fieldset>
-                <h2>DATOS PARTICIPANTES</h2>
+        <form action="#" method="post" class="container g-3 mt-3">
+            <fieldset class="p-4 mb-3">
+                <h2 class="mb-3">DATOS PARTICIPANTES</h2>
                 <article class="row">
-                <section class="col-3">
-                    <h3 class="hidden">Nombre</h3>
-                    <label for="NIF" class="form-label">NIF</label>
-                    <article class="input-group">
-                        <input type="text" name="NIF" id="NIF" class="form-control">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon1">Buscar</button>
-                    </article>
-                </section>
-                <section class="col-2 mb-3">
-                    <h3 class="hidden">Numero Seguridad Social</h3>
-                    <label for="NSS" class="form-label">NSS</label>
-                    <input type="text" name="NSS" id="NSS" class="form-control">
-                </section>
-            </article>
-            <article>
+                    <h3 class="hidden">Primera fila</h3>
+                    <section class="col-3 mb-3">
+                        <h3 class="hidden">Nombre</h3>
+                        <label for="NIF" class="form-label">NIF</label>
+                        <article class="input-group">
+                            <input type="text" name="NIF" id="NIF" class="form-control">
+                            <button class="btn btn-outline-primary" type="button" id="button-addon1">Buscar</button>
+                        </article>
+                    </section>
+                    <section class="col-2 mb-3">
+                        <h3 class="hidden">Numero Seguridad Social</h3>
+                        <label for="NSS" class="form-label">NSS</label>
+                        <input type="text" name="NSS" id="NSS" class="form-control">
+                    </section>
+                </article>
 
-            </article>
+                <article class="row">
+                    <h3 class="hidden">Segunda fila</h3>
+                    <section class="col-3 mb-3">
+                        <h3 class="hidden">Nombre</h3>
+                        <label for="Nombre" class="form-label">Nombre</label>
+                        <input type="text" name="Nombre" id="Nombre" class="form-control">
+                    </section>
+                    <section class="col-4 mb-3">
+                        <h3 class="hidden">Primer Apellido</h3>
+                        <label for="Primer-Apellido" class="form-label">Primer Apellido</label>
+                        <input type="text" name="Primer-Apellido" id="Primer-Apellido" class="form-control">
+                    </section>
+                    <section class="col-4 mb-3">
+                        <h3 class="hidden">Segundo Apellido</h3>
+                        <label for="Segundo-Apellido" class="form-label">Segundo Apellido</label>
+                        <input type="text" name="Segundo-Apellido" id="Segundo-Apellido" class="form-control">
+                    </section>
+                </article>
+
+                <article>
+                    <h3 class="hidden">tercera fila</h3>
+                    <section class="col-8 mb-3">
+                        <h3 class="hidden">Situacion laboral</h3>
+                        <label for="Situacion-laboral" class="form-label">Situacion laboral</label>
+                        <select class="form-select" disabled>
+                            <option value="1">Desempleado</option>
+                            <option value="2">Cuenta ajena</option>
+                            <option value="3">Autónomo</option>
+                        </select>
+                    </section>
+                </article>
+
+                <article>
+                    <h3 class="hidden">Cuarta fila</h3>
+                    <section class="col-8 mb-3">
+                        <h3 class="hidden">Situacion laboral anterior</h3>
+                        <label for="Situacion-laboral-anterior" class="form-label">Situacion laboral anterior</label>
+                        <select class="form-select">
+                            <option value="1">Desempleado</option>
+                            <option value="2">Cuenta ajena</option>
+                            <option value="3">Autónomo</option>
+                        </select>
+                    </section>
+                </article>
+
+                <article>
+                    <h3 class="hidden">Quinta fila</h3>
+                    <label for="Reserva" class="form-label col-1">Reserva</label>
+                    <section class="mb-3 form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Si</label>
+                    </section>
+                    <section class="mb-3 form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="NO" id="No">
+                        <label class="form-check-label" for="No">No</label>
+                    </section>
+                </article>
+            </fieldset>
+
+            <fieldset class="p-4 mn-3">
+                <h2 class="mb-3">DATOS PARTICIPANTES</h2>
+                <article class="row">
+                    <h3 class="hidden">Primera fila</h3>
+                    <section class="col-3 mb-3">
+                        <h3 class="hidden">Nombre</h3>
+                        <label for="NIF" class="form-label">NIF</label>
+                        <article class="input-group">
+                            <input type="text" name="NIF" id="NIF" class="form-control">
+                            <button class="btn btn-outline-primary" type="button" id="button-addon1">Buscar</button>
+                        </article>
+                    </section>
+                    <section class="col-2 mb-3">
+                        <h3 class="hidden">Numero Seguridad Social</h3>
+                        <label for="NSS" class="form-label">NSS</label>
+                        <input type="text" name="NSS" id="NSS" class="form-control">
+                    </section>
+                </article>
+
+                <article class="row">
+                    <h3 class="hidden">Segunda fila</h3>
+                    <section class="col-3 mb-3">
+                        <h3 class="hidden">Nombre</h3>
+                        <label for="Nombre" class="form-label">Nombre</label>
+                        <input type="text" name="Nombre" id="Nombre" class="form-control">
+                    </section>
+                    <section class="col-4 mb-3">
+                        <h3 class="hidden">Primer Apellido</h3>
+                        <label for="Primer-Apellido" class="form-label">Primer Apellido</label>
+                        <input type="text" name="Primer-Apellido" id="Primer-Apellido" class="form-control">
+                    </section>
+                    <section class="col-4 mb-3">
+                        <h3 class="hidden">Segundo Apellido</h3>
+                        <label for="Segundo-Apellido" class="form-label">Segundo Apellido</label>
+                        <input type="text" name="Segundo-Apellido" id="Segundo-Apellido" class="form-control">
+                    </section>
+                </article>
+
+                <article>
+                    <h3 class="hidden">tercera fila</h3>
+                    <section class="col-8 mb-3">
+                        <h3 class="hidden">Situacion laboral</h3>
+                        <label for="Situacion-laboral" class="form-label">Situacion laboral</label>
+                        <select class="form-select" disabled>
+                            <option value="1">Desempleado</option>
+                            <option value="2">Cuenta ajena</option>
+                            <option value="3">Autónomo</option>
+                        </select>
+                    </section>
+                </article>
+
+                <article>
+                    <h3 class="hidden">Cuarta fila</h3>
+                    <section class="col-8 mb-3">
+                        <h3 class="hidden">Situacion laboral anterior</h3>
+                        <label for="Situacion-laboral-anterior" class="form-label">Situacion laboral anterior</label>
+                        <select class="form-select">
+                            <option value="1">Desempleado</option>
+                            <option value="2">Cuenta ajena</option>
+                            <option value="3">Autónomo</option>
+                        </select>
+                    </section>
+                </article>
+                
+                <article>
+                    <h3 class="hidden">Quinta fila</h3>
+                    <label for="Reserva" class="form-label col-1">Reserva</label>
+                    <section class="mb-3 form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Si</label>
+                    </section>
+                    <section class="mb-3 form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="NO" id="No">
+                        <label class="form-check-label" for="No">No</label>
+                    </section>
+                </article>
             </fieldset>
         </form>
     </main>
