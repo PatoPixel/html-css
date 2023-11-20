@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="BootsTrap/BootStrap.min.css">
     <link rel="stylesheet" href="BootsTrap/docs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <script src="BootsTrap/BootStrap.bundle.min.js"> </script>
     <style>
         main {
@@ -15,6 +16,9 @@
 
         section {
             border: 1px solid black;
+        }
+        .hidden{
+            display: none;
         }
     </style>
 </head>
@@ -111,31 +115,53 @@
         </tbody>
     </table>
     <div class="form-check form-check-reverse">
-  <input class="form-check-input" type="checkbox" value="" id="reverseCheck1">
-  <label class="form-check-label" for="reverseCheck1">
-    Reverse checkbox
-  </label>
-</div>
-<div class="form-check form-check-reverse">
-  <input class="form-check-input" type="checkbox" value="" id="reverseCheck2" disabled>
-  <label class="form-check-label" for="reverseCheck2">
-    Disabled reverse checkbox
-  </label>
-</div>
+        <input class="form-check-input" type="checkbox" value="" id="reverseCheck1">
+        <label class="form-check-label" for="reverseCheck1">
+            Reverse checkbox
+        </label>
+    </div>
+    <div class="form-check form-check-reverse">
+        <input class="form-check-input" type="checkbox" value="" id="reverseCheck2" disabled>
+        <label class="form-check-label" for="reverseCheck2">
+            Disabled reverse checkbox
+        </label>
+    </div>
 
-<div class="form-check form-switch  form-check-reverse">
-  <input class="form-check-input" type="checkbox" id="flexSwitchCheckReverse">
-  <label class="form-check-label" for="flexSwitchCheckReverse">Reverse switch checkbox input</label>
-</div>
-<div class="form-floating mb-3">
-    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-    <label for="floatingInput">Email address</label>
-  </div>
-  <div class="form-floating">
-    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-    <label for="floatingPassword">Password</label>
-  </div>
-  
+    <div class="form-check form-switch  form-check-reverse">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckReverse">
+        <label class="form-check-label" for="flexSwitchCheckReverse">Reverse switch checkbox input</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+    </div class="mb-3">
+    <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+    </div>
+
+    <article class="accordion col-6 mt-2">
+        <h3 class="hidden">Acordeón</h3>
+        <section class="accordion-item">
+            <h4 class="hidden">Elemento 1</h4>
+            <header class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#c1"
+                    aria-expanded="true" aria-controls="c1">
+                    Elemento de acordeon 1
+                </button>
+            </header>
+            <footer id="c1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <p class="accordion-body"> 
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ex earum
+                    facere porro, suscipit veniam illo omnis quis odit nostrum blanditiis ea laboriosam cumque esse,
+                    minima mollitia tempora ratione voluptas!
+                </p>
+            </footer>
+        </section>
+    </article>
+    <div class="alert alert-dark col-6 m-auto">
+        <p>hola</p>
+    </div>
 </body>
 
 </html>
