@@ -11,7 +11,7 @@
         }
 
         html {
-            width: 80%;
+            width: 70%;
             margin-left: 200px;
             margin-right: 50px;
         }
@@ -25,6 +25,14 @@
         body>header nav {
             width: 25%;
             margin: 0px;
+            
+        } 
+        body>header nav {
+            padding-left: 350px;
+            padding-top: 20px;
+        }
+        body>header nav a{
+            margin: 10px;
         }
 
         body>header input {
@@ -70,11 +78,16 @@
 
         main>nav {
             float: left;
+            
         }
-
         main>nav+nav {
             float: right;
         }
+        a{
+            text-decoration: none;
+        }
+
+        
 
         main>nav a,
         main>nav select {
@@ -127,7 +140,9 @@
             border: 1px solid rgb(0, 0, 0, 0.2);
             padding: 5px;
         }
-
+        body aside ul>li>ul>li {
+            list-style: none;
+        }
 
         body aside ul>li+li>a {
             text-decoration: none
@@ -206,7 +221,7 @@
             <a href="#">Editar</a>
             <a href="#">Ver historial</a>
             <select name="Herramientas" id="herramientas" class="herramienta">
-                <option value="#" disabled="disabled" selected="selected"> Herramientas</option>
+                <option value="#" disabled selected hidden="hidden"> Herramientas</option>
                 <option value="#">Lo que enlaza aqui</option>
                 <option value="#">Cambios en enlazadas</option>
                 <option value="#">Subir archivo</option>
