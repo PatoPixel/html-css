@@ -6,16 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        p {
-            line-height: 25px;
-        }
-
-        html {
-            width: 70%;
-            margin-left: 200px;
-            margin-right: 50px;
-        }
-
         body>header {
             display: flex;
             justify-content: space-between;
@@ -56,11 +46,9 @@
             float: left;
             transition-property: background-color, color;
             transition-duration: 2s;
-            width: 15%;
-            /* border: 1px solid black; */
-            color: blue;
-            position: sticky;
-            top: 0px;
+            /* position: sticky; */
+            width: 20%;
+            border: 1px solid black;
         }
 
         body>aside:hover {
@@ -71,38 +59,19 @@
         }
 
         main {
-            width: 75%;
-            /* border: 1px black solid;    */
-            margin-left: 20%;
-        }
 
-        main>nav {
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-between;
+            width: 70%;
+        }
+        main {
+            border: 1px black solid;
             float: left;
-            
-        }
-        main>nav+nav {
-            float: right;
-        }
-        a{
-            text-decoration: none;
-        }
-
-        
-
-        main>nav a,
-        main>nav select {
-            padding: 5px;
-        }
-
-        main>aside {
-            width: 370px;
-            float: right;
+            margin-right: 50px;
             margin-left: 5px;
         }
 
-        .herramienta {
-            float: right;
-        }
 
         .celdas-finales {
             padding: 5px;
@@ -164,7 +133,6 @@
         </nav>
     </header>
     <aside>
-
         <p>Contenidos [ocultar]</p>
         <hr>
         <h2>Inicio</h2>
@@ -206,12 +174,9 @@
             <li>Enlaces externos</li>
             <li>Notas</li>
         </ul>
-
     </aside>
     <main>
-        <h1>Islantilla</h1>
-        <hr>
-        <br>
+
         <nav>
             <a href="#">Articulo</a>
             <a href="#">Discursión</a>
@@ -239,17 +204,8 @@
                 <option value="#" disabled="disabled">En otros proyectos</option>
                 <option value="#">Wikimedia Commons</option>
             </select>
-        </nav>
-
-        <!--
-            He usado el select como método de menú, no serviría como
-            un menú real pero no se como hacer un menú y esto es lo
-            único que se me ha parecido
-        -->
-        <br>
-        <br>
-        <hr>
-        <br><br>
+        </section>
+        <h1>Islantilla</h1>
         <aside>
             <table>
                 <tr>
