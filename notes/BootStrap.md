@@ -1,3 +1,11 @@
+---
+attachments: [Clipboard_2023-10-24-13-37-59.png]
+favorited: true
+title: BOOTSTRAP
+created: '2023-11-14T10:29:04.846Z'
+modified: '2023-11-14T13:23:06.931Z'
+---
+
 # BOOTSTRAP
 --------------
 
@@ -8,14 +16,15 @@
 
 
 # Tabla de contenidos
-- [BOOTSTRAP](#bootstrap)
+- [PLANTILLA](#plantilla)
 - [Tabla de contenidos](#tabla-de-contenidos)
   - [Introducción](#introducción)
   - [Instalación](#instalación)
-    - [Fonts](#fonts)
-  - [listas](#listas)
-    - [Subapartado 2.1](#subapartado-21)
-  - [Capitulo 3](#capitulo-3)
+    - [Seccion1](#seccion1)
+- [Capitulo 2](#capitulo-2)
+  - [Subapartado 2.1](#subapartado-21)
+- [Capitulo 3](#capitulo-3)
+    - [Seccion1](#seccion1-1)
 
 <div style="page-break-after: always;"></div>
 
@@ -49,3 +58,25 @@
 [Tabla de contenidos](#tabla-de-contenidos)
 ## Capitulo 3
 [Tabla de contenidos](#tabla-de-contenidos)
+
+- Recursos: 
+  - 
+
+```console
+#...
+```
+)
+### Seccion1
+[Tabla de contenidos](#tabla-de-contenidos)
+
+```console
+#...
+```
+- hola
+gege
+  - egeg
+
+wfwfw
+
+  wffwf
+
