@@ -11,39 +11,49 @@
     <style>
         body {
             border: 1px solid rgb(0, 0, 0, 0.3);
-            box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.7);
+            box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.7);
         }
         header>nav:nth-child(2){
-            border-top: 1px solid rgb(0, 0, 0, 0.3);
-            border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+            border-top: 1px solid rgb(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgb(0, 0, 0, 0.1);
             margin-left: 0px;
             margin-right: 0px;
         }
     
-        header>nav>main>ul>li header>nav>main>ul>ul>li{
+        header>nav>main>ul>li {
         border: 1px solid transparent;
-        box-shadow: 0px 0px 2px transparent; 
+        box-shadow: 0px 0px 2px transparent;
+
         }
-        header>nav>main>ul>ul>li{
+
+        header>nav>main>ul>li>ul>li{
         border: 1px solid transparent;
         box-shadow: 0px 0px 2px transparent; 
         padding: 0px 16px;
         }
         header>nav>main>ul>li:hover{
-        transition-property: border, box-shadow;
+        transition-property: border, box-shadow, color;
         transition-duration:0.5s;
         border: 1px solid rgb(0, 0, 0, 0.3);
         box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.3);
         }
         header>nav>main>ul>ul>li:hover{
-        transition-property: border, box-shadow;
+        transition-property: border, box-shadow, color;
         transition-duration:0.5s;
         border: 1px solid rgb(0, 0, 0, 0.3);
         box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.3);
         }
         .Enlaces{
+            text-decoration: none;
             color: #1e1e1e;
-            size: 14px;
+        }
+        .Enlaces:hover{
+            text-decoration: none;
+            color: #1e1e1e;
+        }
+        .Enlaces:visited{
+            text-decoration: none;
+            color: #1e1e1e;
         }
     </style>
 
@@ -65,17 +75,18 @@
                     alt="Español" width="48"></a>
         </nav>
         <nav class="row justify-content-center p-5 pt-0 pb-0">
-            <header class="col-3">
+            <picture class="col-3">
                 <img src="Fotos-Biobanco/logo_junta_1.png" width="300" alt="Junta" class="col">
-            </header>
-            <main class="col-7 mt-3">
+            </picture>
+            <nav class="col-7 mt-3">
                 <ul class="nav justify-content-center justify-content-between m-4 col">
                     <li class="nav-item ">
                         <a class="nav-link active Enlaces" style="font-size: 14px;" aria-current="page" href="#">Incio</a>
                     </li>
+                    <li>
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
-                          <a class="btn nav-link Enlaces" style="font-size: 14px;" data-bs-toggle="dropdown" aria-expanded="false" >
+                          <a class="btn nav-link Enlaces" style="font-size: 14px;" data-bs-toggle="dropdown" aria-expanded="false" href="#">
                             Dropdown
                           </a>
                           <ul class="dropdown-menu ">
@@ -85,6 +96,7 @@
                           </ul>
                         </li>
                       </ul>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link Enlaces" style="font-size: 14px;" href="#">Actividades</a>
                     </li>
@@ -97,28 +109,37 @@
                     <li class="nav-item">
                         <a class="nav-link Enlaces" style="font-size: 14px;" href="#">Contácto</a>
                     </li>
+                    <li>
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
-                          <a class="btn nav-link Enlaces" style="font-size: 14px;" data-bs-toggle="dropdown" aria-expanded="false" >
+                          <a class="btn nav-link Enlaces" style="font-size: 14px;" data-bs-toggle="dropdown" aria-expanded="false" href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
                             <path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"/></svg>
-                            Dropdown
+                            <span class="m-2">Privado  </span>
                           </a>
                           <ul class="dropdown-menu ">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Portal del Donante</a></li>
+                            <li><a class="dropdown-item" href="#">Portal del Investigador</a></li>
+                            <li><a class="dropdown-item" href="#">Portal del Profesional</a></li>
                           </ul>
                         </li>
                       </ul>
+                    </li>
                 </ul>
-            </main>
-            <footer class="col-2 mt-3">
+            </nav>
+            <picture class="col-2 mt-4 ps-5">
                 <img src="Fotos-Biobanco/logo_biobanco.png" alt="">
-            </footer>
+            </picture>
         </nav>
     </header>
     <main class="container">
+        <div class="row">
+        <article>
+            <h1></h1>
+        </article>
+        </div>
+
+        <br><br><br><br><br><br><br>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam temporibus molestias inventore eius
             repudiandae,
             asperiores reprehenderit hic voluptate ducimus, nisi beatae accusamus, explicabo commodi architecto ullam et
