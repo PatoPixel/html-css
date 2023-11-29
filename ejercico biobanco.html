@@ -25,26 +25,26 @@
             margin-right: 0px;
         }
 
-        header>nav>main>ul>li {
+        header>nav>nav>ul>li {
             border: 1px solid transparent;
             box-shadow: 0px 0px 2px transparent;
 
         }
 
-        header>nav>main>ul>li>ul>li {
+        header>nav>nav>ul>li>ul>li {
             border: 1px solid transparent;
             box-shadow: 0px 0px 2px transparent;
             padding: 0px 16px;
         }
 
-        header>nav>main>ul>li:hover {
+        header>nav>nav>ul>li:hover {
             transition-property: border, box-shadow, color;
             transition-duration: 0.5s;
             border: 1px solid rgb(0, 0, 0, 0.3);
             box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.3);
         }
 
-        header>nav>main>ul>ul>li:hover {
+        header>nav>nav>ul>ul>li:hover {
             transition-property: border, box-shadow, color;
             transition-duration: 0.5s;
             border: 1px solid rgb(0, 0, 0, 0.3);
@@ -75,11 +75,14 @@
             text-decoration: underline;
 
         }
+        main>h2{
+            padding-top: 100px;
+        }
     </style>
 
 </head>
 
-<body class="col-8 m-auto mt-4">
+<body class="col-8 m-auto mt-4 mb-4">
     <header>
         <nav class="d-flex justify-content-end p-1 m-1 ">
             <a href="#"><img src="Fotos-Biobanco/spain-flag-circle-shape-flag-icon-png.png" alt="Español"
@@ -96,18 +99,18 @@
         </nav>
         <nav class="row justify-content-center p-5 pt-0 pb-0">
             <picture class="col-3">
-                <img src="Fotos-Biobanco/logo_junta_1.png" width="300" alt="Junta" class="col">
+                <img src="Fotos-Biobanco/logo_junta_1.png" width="350" alt="Junta" class="col">
             </picture>
             <nav class="col-7 mt-3">
                 <ul class="nav justify-content-center justify-content-between m-4 col">
                     <li class="nav-item ">
-                        <a class="nav-link active Enlaces" style="font-size: 14px;" aria-current="page"
+                        <a class="nav-link active Enlaces" style="font-size: 20px;" aria-current="page"
                             href="#">Incio</a>
                     </li>
                     <li>
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown">
-                                <a class="btn nav-link Enlaces" style="font-size: 14px;" data-bs-toggle="dropdown"
+                                <a class="btn nav-link Enlaces" style="font-size: 20px;" data-bs-toggle="dropdown"
                                     aria-expanded="false" href="#">
                                     Dropdown
                                 </a>
@@ -120,22 +123,23 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link Enlaces" style="font-size: 14px;" href="#">Actividades</a>
+                        <a class="nav-link Enlaces" style="font-size: 20px;" href="#">Actividades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link Enlaces" style="font-size: 14px;" aria-disabled="true">Noticias</a>
+                        <a class="nav-link Enlaces" style="font-size: 20px;" aria-disabled="true">Noticias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active Enlaces" style="font-size: 14px;" aria-current="page"
+                        <a class="nav-link active Enlaces" style="font-size: 20px;" aria-current="page"
                             href="#">Documentación</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link Enlaces" style="font-size: 14px;" href="#">Contácto</a>
+                        <a class="nav-link Enlaces" style="font-size: 20px;" href="#">Contacto</a>
                     </li>
+                    <br>
                     <li>
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown">
-                                <a class="btn nav-link Enlaces" style="font-size: 14px;" data-bs-toggle="dropdown"
+                                <a class="btn nav-link Enlaces" style="font-size: 20px;" data-bs-toggle="dropdown"
                                     aria-expanded="false" href="#">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
                                         <path
@@ -160,7 +164,7 @@
     </header>
     <main class="container">
         <div class="row pt-5">
-            <article class="col-5 pt-3 ps-5">
+            <article class="col-5 pt-4 ps-5">
                 <h2 class="hidden">Cabecera</h2>
                 <a href="#">Biobanco del Sistema Sanitario Público de Andalucía</a>
                 <br>
@@ -195,7 +199,7 @@
               </div>
             </div>
         </div>
-        <h2 class="fw-bold text-center pt-5" style="font-size: 30px;">Un BIOBANCO de muestras y datos clínicos para Investigación, Asistencia y Docencia</h2>
+        <h2 class="fw-bold text-center" style="font-size: 30px;">Un BIOBANCO de muestras y datos clínicos para Investigación, Asistencia y Docencia</h2>
         <br><br><br><br><br><br><br>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam temporibus molestias inventore eius
             repudiandae,
