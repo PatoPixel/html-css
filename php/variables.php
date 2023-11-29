@@ -1,0 +1,2 @@
+<?php
+    $mensaje = "Hola mundo";
