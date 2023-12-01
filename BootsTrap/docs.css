@@ -2835,7 +2835,10 @@ details[open]>.bd-summary-link {
     color: #000;
     background-color: #fff
 }
-
+.bd-biobanco{
+    color: #000;
+    background-color: #ececec;
+}
 .bd-black {
     color: #fff;
     background-color: #000
